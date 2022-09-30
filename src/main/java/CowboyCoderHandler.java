@@ -8,7 +8,7 @@ import com.intellij.openapi.project.Project;
 import com.intellij.psi.PsiFile;
 import org.jetbrains.annotations.NotNull;
 
-class HackerTypeHandler extends TypedHandlerDelegate {
+class CowboyCoderHandler extends TypedHandlerDelegate {
 
     private int count = 0;
 

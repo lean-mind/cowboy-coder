@@ -1,12 +1,11 @@
 <idea-plugin>
-    <id>es.leanmind.unique.hackertype.1</id>
-    <name>Hackertype</name>
+    <id>es.leanmind.unique.cowboyCoder.1</id>
+    <name>CowboyCoder</name>
     <version>0.1</version>
     <vendor email="contact@leanmind.es" url="http://leanmind.es">Lean Mind</vendor>
 
     <description><![CDATA[
     This plugin types part of the GildedRose kata code with every keystroke.<br>
-    <em>most HTML tags may be used</em>
     ]]></description>
 
     <change-notes><![CDATA[
@@ -23,7 +22,7 @@
 
     <extensions defaultExtensionNs="com.intellij">
         <typedHandler
-                implementation="HackerTypeHandler"/>
+                implementation="CowboyCoderHandler"/>
     </extensions>
 
     <actions>
