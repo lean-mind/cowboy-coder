@@ -1,0 +1,32 @@
+<idea-plugin>
+    <id>es.leanmind.unique.hackertype.1</id>
+    <name>Hackertype</name>
+    <version>0.1</version>
+    <vendor email="contact@leanmind.es" url="http://leanmind.es">Lean Mind</vendor>
+
+    <description><![CDATA[
+    This plugin types part of the GildedRose kata code with every keystroke.<br>
+    <em>most HTML tags may be used</em>
+    ]]></description>
+
+    <change-notes><![CDATA[
+      Add change notes here.<br>
+      <em>most HTML tags may be used</em>
+    ]]>
+    </change-notes>
+
+    <!-- please see https://plugins.jetbrains.com/docs/intellij/build-number-ranges.html for description -->
+    <idea-version since-build="193.0"/>
+    <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <typedHandler
+                implementation="HackerTypeHandler"/>
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
+</idea-plugin>
