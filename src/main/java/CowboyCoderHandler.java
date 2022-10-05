@@ -12,20 +12,21 @@ class CowboyCoderHandler extends TypedHandlerDelegate {
 
     private int count = 0;
 
-    private final String text = "package com.gildedrose;\n" +
-    "class GildedRose {\n" +
+    private final String text = "package com.sellingpoint;\n" +
+    "\n" +
+    "class SellingPoint {\n" +
     "    Item[] items;\n" +
     "\n" +
-    "    public GildedRose(Item[] items) {\n" +
+    "    public SellingPoint(Item[] items) {\n" +
     "        this.items = items;\n" +
     "    }\n" +
     "\n" +
     "    public void updateQuality() {\n" +
     "        for (int i = 0; i < items.length; i++) {\n" +
-    "            if (!items[i].name.equals('Aged Brie')\n" +
-    "                    && !items[i].name.equals('Backstage passes to a TAFKAL80ETC concert')) {\n" +
+    "            if (!items[i].name.equals('Post card')\n" +
+    "                    && !items[i].name.equals('Desk chairs')) {\n" +
     "                if (items[i].quality > 0) {\n" +
-    "                    if (!items[i].name.equals('Sulfuras, Hand of Ragnaros')) {\n" +
+    "                    if (!items[i].name.equals('Ice cream')) {\n" +
     "                        items[i].quality = items[i].quality - 1;\n" +
     "                    }\n" +
     "                }\n" +
@@ -33,7 +34,7 @@ class CowboyCoderHandler extends TypedHandlerDelegate {
     "                if (items[i].quality < 50) {\n" +
     "                    items[i].quality = items[i].quality + 1;\n" +
     "\n" +
-    "                    if (items[i].name.equals('Backstage passes to a TAFKAL80ETC concert')) {\n" +
+    "                    if (items[i].name.equals('Desk chairs')) {\n" +
     "                        if (items[i].sellIn < 11) {\n" +
     "                            if (items[i].quality < 50) {\n" +
     "                                items[i].quality = items[i].quality + 1;\n" +
@@ -49,15 +50,15 @@ class CowboyCoderHandler extends TypedHandlerDelegate {
     "                }\n" +
     "            }\n" +
     "\n" +
-    "            if (!items[i].name.equals('Sulfuras, Hand of Ragnaros')) {\n" +
+    "            if (!items[i].name.equals('Ice cream')) {\n" +
     "                items[i].sellIn = items[i].sellIn - 1;\n" +
     "            }\n" +
     "\n" +
     "            if (items[i].sellIn < 0) {\n" +
-    "                if (!items[i].name.equals('Aged Brie')) {\n" +
-    "                    if (!items[i].name.equals('Backstage passes to a TAFKAL80ETC concert')) {\n" +
+    "                if (!items[i].name.equals('Post card')) {\n" +
+    "                    if (!items[i].name.equals('Desk chairs')) {\n" +
     "                        if (items[i].quality > 0) {\n" +
-    "                            if (!items[i].name.equals('Sulfuras, Hand of Ragnaros')) {\n" +
+    "                            if (!items[i].name.equals('Ice cream')) {\n" +
     "                                items[i].quality = items[i].quality - 1;\n" +
     "                            }\n" +
     "                        }\n" +
