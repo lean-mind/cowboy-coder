@@ -1,11 +1,11 @@
 <idea-plugin>
-    <id>es.leanmind.unique.cowboyCoder.1</id>
-    <name>CowboyCoder</name>
+    <id>es.leanmind.unique.trainingCourses.1</id>
+    <name>TrainingCourses</name>
     <version>0.1</version>
     <vendor email="contact@leanmind.es" url="http://leanmind.es">Lean Mind</vendor>
 
     <description><![CDATA[
-    This plugin types part of the GildedRose kata code with every keystroke.<br>
+    This plugin types the Lean Mind available training courses for Spring 2023 with every keystroke.<br>
     ]]></description>
 
     <change-notes><![CDATA[
@@ -22,7 +22,7 @@
 
     <extensions defaultExtensionNs="com.intellij">
         <typedHandler
-                implementation="CowboyCoderHandler"/>
+                implementation="TrainingCoursesHandler"/>
     </extensions>
 
     <actions>
