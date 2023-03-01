@@ -12,35 +12,22 @@ class TrainingCoursesHandler extends TypedHandlerDelegate {
 
     private int count = 0;
 
-    private final String text = "import { SustainableCodingCourse } from \"./sustainable-coding-course\"\n" +
-            "import { April, March, May } from \"./months\"\n" +
+    private final String text = "import {BetterSkills, createPersonFrom} from \"./person\";\n" +
+            "import {createWorkshop, CodingCourse, UpcomingEditions} from \"./workshop\";\n" +
             "\n" +
-            "const availableTrainingCourses = () => {\n" +
-            "  const course = new SustainableCodingCourse()\n" +
-            "  const nextCourses = [\n" +
-            "    {\n" +
-            "      place: 'Barcelona',\n" +
-            "      dates: [new Date(2023, March, 30), new Date(2023, March, 31)],\n" +
-            "      course,\n" +
-            "    },\n" +
-            "    {\n" +
-            "      place: 'Madrid',\n" +
-            "      dates: [new Date(2023, April, 19), new Date(2023, April, 20)],\n" +
-            "      course,\n" +
-            "    },\n" +
-            "    {\n" +
-            "      place: 'San Francisco Bay Area',\n" +
-            "      dates: [new Date(2023, May, 18), new Date(2023, May, 19)],\n" +
-            "      course,\n" +
-            "    },\n" +
-            "    {\n" +
-            "      place: 'Chicago',\n" +
-            "      dates: [new Date(2023, May, 25), new Date(2023, May, 26)],\n" +
-            "      course,\n" +
-            "    }\n" +
-            "  ]\n" +
             "\n" +
-            "  return nextCourses\n" +
+            "export const wantToLevelUp = async (): Promise<BetterSkills> => {\n" +
+            "  const you = createPersonFrom('United States')\n" +
+            "  const sustainableCodingWorkshop = createWorkshop(CodingCourse)\n" +
+            "\n" +
+            "  you.findTrainingCoursesAt('https://leanmind.es/en/training-courses/')\n" +
+            "  if (you.areInEarlyDate()) {\n" +
+            "    you.haveADiscountIn(sustainableCodingWorkshop)\n" +
+            "  }\n" +
+            "  you.enrollToday(sustainableCodingWorkshop.edition(UpcomingEditions))\n" +
+            "  await you.attendWorkshop()\n" +
+            "\n" +
+            "  return you.withBetterSkills()\n" +
             "}";
 
     @NotNull
