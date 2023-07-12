@@ -4,25 +4,20 @@
     <version>0.1</version>
     <vendor email="contact@leanmind.es" url="http://leanmind.es">Lean Mind</vendor>
 
-    <description><![CDATA[
-    This plugin types part of the GildedRose kata code with every keystroke.<br>
-    ]]></description>
-
-    <change-notes><![CDATA[
-      Add change notes here.<br>
-      <em>most HTML tags may be used</em>
-    ]]>
-    </change-notes>
+    <!-- Description will be read from patchPluginXml task's attribute "pluginDescription" (see build.gradle) -->
+    <!-- <description></description> -->
 
     <!-- please see https://plugins.jetbrains.com/docs/intellij/build-number-ranges.html for description -->
-    <idea-version since-build="193.0"/>
+    <!-- Lowest compatible version (since-build) will be read from "patchPluginXml" task's attribute "sinceBuild" (see build.gradle) -->
+    <!-- Highest compatible version (until-build) will be inferred from "intellij" task's attribute "version" (see build.gradle) -->
+    <!--<idea-version since-build="223.0" until-build="223.*"/>-->
+
     <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
          on how to target different products -->
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <typedHandler
-                implementation="CowboyCoderHandler"/>
+        <typedHandler implementation="CowboyCoderHandler"/>
     </extensions>
 
     <actions>
