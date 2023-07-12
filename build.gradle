@@ -1,5 +1,5 @@
 plugins {
-    id 'org.jetbrains.intellij' version '1.9.0'
+    id 'org.jetbrains.intellij' version '1.15.0'
     id 'java'
 }
 
@@ -17,12 +17,11 @@ dependencies {
 
 // See https://github.com/JetBrains/gradle-intellij-plugin/
 intellij {
-    version = '2021.2.2'
+    version = '2023.1'
 }
 patchPluginXml {
-    changeNotes = """
-      Add change notes here.<br>
-      <em>most HTML tags may be used</em>"""
+    pluginDescription = "This plugin types part of the GildedRose kata code with every keystroke.<br>"
+    sinceBuild = "223.0"
 }
 test {
     useJUnitPlatform()
